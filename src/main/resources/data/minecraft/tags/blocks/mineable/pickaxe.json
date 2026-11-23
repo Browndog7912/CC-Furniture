@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "cc_furniture:stove",
+    "cc_furniture:oven",
+    "cc_furniture:dishwasher",
+    "cc_furniture:kitchen_sink",
+    "cc_furniture:fridge",
+    "cc_furniture:microwave",
+    "cc_furniture:coffee_maker",
+    "cc_furniture:plate"
+  ]
+}

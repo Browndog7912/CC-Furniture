@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "cc_furniture",
+  "version": "${version}",
+  "name": "CC: Furniture",
+  "description": "Kitchen furniture that works: Stove, Oven, Dishwasher, Kitchen Sink and Fridge. Every block can be controlled from a CC: Tweaked computer.",
+  "authors": ["Browndog7912"],
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "icon": "assets/cc_furniture/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ccfurniture.CCFurniture"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "computercraft": "*"
+  }
+}

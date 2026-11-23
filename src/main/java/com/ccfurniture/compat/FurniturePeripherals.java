@@ -1,0 +1,28 @@
+package com.ccfurniture.compat;
+
+import com.ccfurniture.blockentity.*;
+import dan200.computercraft.api.peripheral.PeripheralLookup;
+
+/** Only loaded when CC: Tweaked is installed (see CCFurniture#onInitialize). */
+public final class FurniturePeripherals {
+	public static void register() {
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new FurnacePeripheral("stove", (KitchenFurnaceBlockEntity) be), ModBlockEntities.STOVE);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new FurnacePeripheral("oven", (KitchenFurnaceBlockEntity) be), ModBlockEntities.OVEN);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new DishwasherPeripheral((DishwasherBlockEntity) be), ModBlockEntities.DISHWASHER);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new KitchenSinkPeripheral((KitchenSinkBlockEntity) be), ModBlockEntities.KITCHEN_SINK);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new FridgePeripheral((FridgeBlockEntity) be), ModBlockEntities.FRIDGE);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new MicrowavePeripheral((MicrowaveBlockEntity) be), ModBlockEntities.MICROWAVE);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new CoffeeMakerPeripheral((CoffeeMakerBlockEntity) be), ModBlockEntities.COFFEE_MAKER);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new PlatePeripheral((PlateBlockEntity) be), ModBlockEntities.PLATE);
+	}
+
+	private FurniturePeripherals() {}
+}

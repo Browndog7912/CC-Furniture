@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "full=false": {
+      "model": "cc_furniture:block/plate"
+    },
+    "full=true": {
+      "model": "cc_furniture:block/plate_full"
+    }
+  }
+}
