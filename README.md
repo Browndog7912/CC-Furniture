@@ -18,6 +18,10 @@ CC: Tweaked is optional. Without it the blocks still work, there are just no per
 | Plate | 3D model. Right-click with food to place it, empty hand to eat it, sneak + empty hand to take it back. | `plate` |
 | Coffee (item) | 3D mug from the coffee maker. Drink it for Speed II + Haste for 90 s. | - |
 
+| Kitchen Hood | Decorative 3D hood. A screen on the front shows the in-game time (24h, blinking colon). | - |
+| Toaster | 3D model, 2 slots. Right-click with a Bread Slice to load it (empty hand takes it back), click the **lever** on the front (or redstone / computer) to toast; the Toast pops out after 5 s. | `toaster` |
+| Bread Slice / Toast (items) | Craft 1 bread into 4 bread slices. Toasting them makes Toast, which fills more hunger. | - |
+
 The Dishwasher also has a **START button** on its front panel now (the sneak shortcut still works).
 
 All blocks face the player when placed and are crafted from iron ingots plus a vanilla machine (see `data/cc_furniture/recipes`).
@@ -51,6 +55,11 @@ cm.brew(); cm.isBrewing(); cm.getProgress(); cm.getWater(); cm.getBeans(); cm.ge
 
 local plate = peripheral.find("plate")
 plate.isEmpty(); plate.getItem(); plate.clear()
+```
+
+```lua
+local t = peripheral.find("toaster")
+t.start(); t.stop(); t.isToasting(); t.getProgress(); t.size(); t.list(); t.getItemDetail(slot)
 ```
 
 ## Building
