@@ -22,6 +22,8 @@ public final class FurniturePeripherals {
 			(be, side) -> new CoffeeMakerPeripheral((CoffeeMakerBlockEntity) be), ModBlockEntities.COFFEE_MAKER);
 		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new PlatePeripheral((PlateBlockEntity) be), ModBlockEntities.PLATE);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new ToasterPeripheral((ToasterBlockEntity) be), ModBlockEntities.TOASTER);
 	}
 
 	private FurniturePeripherals() {}

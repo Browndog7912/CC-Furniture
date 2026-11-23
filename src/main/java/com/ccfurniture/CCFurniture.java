@@ -36,7 +36,11 @@ public class CCFurniture implements ModInitializer {
 				entries.add(ModBlocks.MICROWAVE);
 				entries.add(ModBlocks.COFFEE_MAKER);
 				entries.add(ModBlocks.PLATE);
+				entries.add(ModBlocks.KITCHEN_HOOD);
+				entries.add(ModBlocks.TOASTER);
 				entries.add(ModItems.COFFEE);
+				entries.add(ModItems.BREAD_SLICE);
+				entries.add(ModItems.TOAST);
 			})
 			.build());
 

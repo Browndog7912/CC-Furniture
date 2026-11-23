@@ -27,6 +27,11 @@ public final class ModBlockEntities {
 	public static final BlockEntityType<PlateBlockEntity> PLATE = register("plate",
 		FabricBlockEntityTypeBuilder.create(PlateBlockEntity::new, ModBlocks.PLATE).build());
 
+	public static final BlockEntityType<KitchenHoodBlockEntity> KITCHEN_HOOD = register("kitchen_hood",
+		FabricBlockEntityTypeBuilder.create(KitchenHoodBlockEntity::new, ModBlocks.KITCHEN_HOOD).build());
+	public static final BlockEntityType<ToasterBlockEntity> TOASTER = register("toaster",
+		FabricBlockEntityTypeBuilder.create(ToasterBlockEntity::new, ModBlocks.TOASTER).build());
+
 	private static <T extends BlockEntity> BlockEntityType<T> register(String name, BlockEntityType<T> type) {
 		return Registry.register(Registries.BLOCK_ENTITY_TYPE, CCFurniture.id(name), type);
 	}

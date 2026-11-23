@@ -8,6 +8,8 @@
     "cc_furniture:fridge",
     "cc_furniture:microwave",
     "cc_furniture:coffee_maker",
-    "cc_furniture:plate"
+    "cc_furniture:plate",
+    "cc_furniture:kitchen_hood",
+    "cc_furniture:toaster"
   ]
 }

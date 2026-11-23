@@ -28,6 +28,11 @@ public final class ModBlocks {
 	public static final Block PLATE = register("plate", new PlateBlock(
 		AbstractBlock.Settings.create().mapColor(MapColor.WHITE).strength(0.5f).sounds(BlockSoundGroup.STONE).nonOpaque()));
 
+	public static final Block KITCHEN_HOOD = register("kitchen_hood",
+		new KitchenHoodBlock(metal(MapColor.IRON_GRAY).strength(2.0f, 4.0f).nonOpaque().luminance(s -> 5)));
+	public static final Block TOASTER = register("toaster",
+		new ToasterBlock(metal(MapColor.IRON_GRAY).strength(1.0f, 3.0f).nonOpaque()));
+
 	private static Block register(String name, Block block) {
 		Registry.register(Registries.ITEM, CCFurniture.id(name), new BlockItem(block, new Item.Settings()));
 		return Registry.register(Registries.BLOCK, CCFurniture.id(name), block);

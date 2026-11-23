@@ -35,5 +35,14 @@
   "message.cc_furniture.coffee_full": "Take some coffee out first.",
   "message.cc_furniture.coffee_water_full": "The water tank is full.",
   "message.cc_furniture.coffee_beans_full": "The bean hopper is full.",
-  "message.cc_furniture.coffee_status": "Water %s/%s, beans %s, cups ready %s"
+  "message.cc_furniture.coffee_status": "Water %s/%s, beans %s, cups ready %s",
+  "block.cc_furniture.kitchen_hood": "Kitchen Hood",
+  "block.cc_furniture.toaster": "Toaster",
+  "item.cc_furniture.bread_slice": "Bread Slice",
+  "item.cc_furniture.toast": "Toast",
+  "container.cc_furniture.toaster": "Toaster",
+  "message.cc_furniture.toaster_started": "Toasting...",
+  "message.cc_furniture.toaster_busy": "The toaster is already running.",
+  "message.cc_furniture.toaster_nothing": "Put a bread slice in first.",
+  "message.cc_furniture.toaster_full": "Both slots are full."
 }
