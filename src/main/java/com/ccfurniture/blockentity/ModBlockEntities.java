@@ -32,6 +32,19 @@ public final class ModBlockEntities {
 	public static final BlockEntityType<ToasterBlockEntity> TOASTER = register("toaster",
 		FabricBlockEntityTypeBuilder.create(ToasterBlockEntity::new, ModBlocks.TOASTER).build());
 
+	public static final BlockEntityType<BlenderBlockEntity> BLENDER = register("blender",
+		FabricBlockEntityTypeBuilder.create(BlenderBlockEntity::new, ModBlocks.BLENDER).build());
+	public static final BlockEntityType<WaffleMakerBlockEntity> WAFFLE_MAKER = register("waffle_maker",
+		FabricBlockEntityTypeBuilder.create(WaffleMakerBlockEntity::new, ModBlocks.WAFFLE_MAKER).build());
+
+	public static final BlockEntityType<KitchenCounterBlockEntity> KITCHEN_COUNTER = register("kitchen_counter",
+		FabricBlockEntityTypeBuilder.create(KitchenCounterBlockEntity::new, ModBlocks.KITCHEN_COUNTER).build());
+	public static final BlockEntityType<KitchenCabinetBlockEntity> KITCHEN_CABINET = register("kitchen_cabinet",
+		FabricBlockEntityTypeBuilder.create(KitchenCabinetBlockEntity::new, ModBlocks.KITCHEN_CABINET).build());
+
+	public static final BlockEntityType<GrillBlockEntity> GRILL = register("grill",
+		FabricBlockEntityTypeBuilder.create(GrillBlockEntity::new, ModBlocks.GRILL).build());
+
 	private static <T extends BlockEntity> BlockEntityType<T> register(String name, BlockEntityType<T> type) {
 		return Registry.register(Registries.BLOCK_ENTITY_TYPE, CCFurniture.id(name), type);
 	}

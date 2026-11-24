@@ -1,0 +1,99 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"s": "cc_furniture:block/kitchen_sink_side",
+		"door": "cc_furniture:block/sink_door",
+		"c": "cc_furniture:block/sink_counter",
+		"particle": "cc_furniture:block/mat_steel",
+		"m": "cc_furniture:block/mat_steel",
+		"b": "cc_furniture:block/mat_black"
+	},
+	"elements": [
+		{
+			"from": [0, 1.5, 6],
+			"to": [16, 15, 16],
+			"faces": {
+				"north": {"uv": [0, 1, 16, 14.5], "texture": "#b"},
+				"east": {"uv": [0, 1, 10, 14.5], "texture": "#s"},
+				"south": {"uv": [0, 1, 16, 14.5], "texture": "#s"},
+				"west": {"uv": [6, 1, 16, 14.5], "texture": "#s"},
+				"up": {"uv": [0, 6, 16, 16], "texture": "#s"},
+				"down": {"uv": [0, 0, 16, 10], "texture": "#s"}
+			}
+		},
+		{
+			"from": [0, 0, 4],
+			"to": [16, 1.5, 16],
+			"faces": {
+				"north": {"uv": [0, 14.5, 16, 16], "texture": "#c"},
+				"east": {"uv": [0, 14.5, 12, 16], "texture": "#c"},
+				"south": {"uv": [0, 14.5, 16, 16], "texture": "#c"},
+				"west": {"uv": [4, 14.5, 16, 16], "texture": "#c"},
+				"up": {"uv": [0, 4, 16, 16], "texture": "#c"},
+				"down": {"uv": [0, 0, 16, 12], "texture": "#c"}
+			}
+		},
+		{
+			"from": [0, 15, 4],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#c"},
+				"east": {"uv": [0, 0, 12, 1], "texture": "#c"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#c"},
+				"west": {"uv": [4, 0, 16, 1], "texture": "#c"},
+				"up": {"uv": [0, 4, 16, 16], "texture": "#c"},
+				"down": {"uv": [0, 0, 16, 12], "texture": "#c"}
+			}
+		},
+		{
+			"from": [0.5, 1.5, 4.5],
+			"to": [7.75, 15, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#door"},
+				"east": {"uv": [10, 1, 11.5, 14.5], "texture": "#door"},
+				"south": {"uv": [0.5, 1, 7.75, 14.5], "texture": "#door"},
+				"west": {"uv": [4.5, 1, 6, 14.5], "texture": "#door"},
+				"up": {"uv": [0.5, 4.5, 7.75, 6], "texture": "#door"},
+				"down": {"uv": [0.5, 10, 7.75, 11.5], "texture": "#door"}
+			}
+		},
+		{
+			"from": [8.25, 1.5, 4.5],
+			"to": [15.5, 15, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#door"},
+				"east": {"uv": [10, 1, 11.5, 14.5], "texture": "#door"},
+				"south": {"uv": [8.25, 1, 15.5, 14.5], "texture": "#door"},
+				"west": {"uv": [4.5, 1, 6, 14.5], "texture": "#door"},
+				"up": {"uv": [8.25, 4.5, 15.5, 6], "texture": "#door"},
+				"down": {"uv": [8.25, 10, 15.5, 11.5], "texture": "#door"}
+			}
+		},
+		{
+			"from": [6.5, 6, 3.8],
+			"to": [7.3, 10, 4.5],
+			"faces": {
+				"north": {"uv": [8.7, 6, 9.5, 10], "texture": "#m"},
+				"east": {"uv": [11.5, 6, 12.2, 10], "texture": "#m"},
+				"south": {"uv": [6.5, 6, 7.3, 10], "texture": "#m"},
+				"west": {"uv": [3.8, 6, 4.5, 10], "texture": "#m"},
+				"up": {"uv": [6.5, 3.8, 7.3, 4.5], "texture": "#m"},
+				"down": {"uv": [6.5, 11.5, 7.3, 12.2], "texture": "#m"}
+			}
+		},
+		{
+			"from": [8.7, 6, 3.8],
+			"to": [9.5, 10, 4.5],
+			"faces": {
+				"north": {"uv": [6.5, 6, 7.3, 10], "texture": "#m"},
+				"east": {"uv": [11.5, 6, 12.2, 10], "texture": "#m"},
+				"south": {"uv": [8.7, 6, 9.5, 10], "texture": "#m"},
+				"west": {"uv": [3.8, 6, 4.5, 10], "texture": "#m"},
+				"up": {"uv": [8.7, 3.8, 9.5, 4.5], "texture": "#m"},
+				"down": {"uv": [8.7, 11.5, 9.5, 12.2], "texture": "#m"}
+			}
+		}
+	]
+}

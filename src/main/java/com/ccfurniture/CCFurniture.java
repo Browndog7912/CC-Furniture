@@ -30,6 +30,7 @@ public class CCFurniture implements ModInitializer {
 			.entries((ctx, entries) -> {
 				entries.add(ModBlocks.STOVE);
 				entries.add(ModBlocks.OVEN);
+				entries.add(ModBlocks.GRILL);
 				entries.add(ModBlocks.DISHWASHER);
 				entries.add(ModBlocks.KITCHEN_SINK);
 				entries.add(ModBlocks.FRIDGE);
@@ -38,9 +39,15 @@ public class CCFurniture implements ModInitializer {
 				entries.add(ModBlocks.PLATE);
 				entries.add(ModBlocks.KITCHEN_HOOD);
 				entries.add(ModBlocks.TOASTER);
+				entries.add(ModBlocks.KITCHEN_COUNTER);
+				entries.add(ModBlocks.KITCHEN_CABINET);
+				entries.add(ModBlocks.BLENDER);
+				entries.add(ModBlocks.WAFFLE_MAKER);
 				entries.add(ModItems.COFFEE);
 				entries.add(ModItems.BREAD_SLICE);
 				entries.add(ModItems.TOAST);
+				entries.add(ModItems.SMOOTHIE);
+				entries.add(ModItems.WAFFLE);
 			})
 			.build());
 

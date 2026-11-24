@@ -10,6 +10,11 @@
     "cc_furniture:coffee_maker",
     "cc_furniture:plate",
     "cc_furniture:kitchen_hood",
-    "cc_furniture:toaster"
+    "cc_furniture:toaster",
+    "cc_furniture:blender",
+    "cc_furniture:waffle_maker",
+    "cc_furniture:kitchen_counter",
+    "cc_furniture:kitchen_cabinet",
+    "cc_furniture:grill"
   ]
 }

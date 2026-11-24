@@ -124,11 +124,11 @@ public class KitchenSinkBlock extends BlockWithEntity {
 	public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
 		if (!state.get(RUNNING)) return;
 		Direction dir = state.get(FACING);
-		double x = pos.getX() + 0.5 - dir.getOffsetX() * 0.3;
-		double z = pos.getZ() + 0.5 - dir.getOffsetZ() * 0.3;
-		world.addParticle(ParticleTypes.FALLING_WATER, x, pos.getY() + 1.0, z, 0, 0, 0);
+		double x = pos.getX() + 0.5 - dir.getOffsetX() * 0.094;
+		double z = pos.getZ() + 0.5 - dir.getOffsetZ() * 0.094;
+		world.addParticle(ParticleTypes.FALLING_WATER, x, pos.getY() + 0.85, z, 0, 0, 0);
 		if (random.nextInt(8) == 0) {
-			world.playSound(pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5,
+			world.playSound(pos.getX() + 0.5, pos.getY() + 0.8, pos.getZ() + 0.5,
 				SoundEvents.BLOCK_WATER_AMBIENT, SoundCategory.BLOCKS, 0.3f, 1.0f, false);
 		}
 	}

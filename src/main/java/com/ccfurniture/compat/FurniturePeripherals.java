@@ -11,6 +11,8 @@ public final class FurniturePeripherals {
 		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new FurnacePeripheral("oven", (KitchenFurnaceBlockEntity) be), ModBlockEntities.OVEN);
 		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new FurnacePeripheral("grill", (KitchenFurnaceBlockEntity) be), ModBlockEntities.GRILL);
+		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new DishwasherPeripheral((DishwasherBlockEntity) be), ModBlockEntities.DISHWASHER);
 		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new KitchenSinkPeripheral((KitchenSinkBlockEntity) be), ModBlockEntities.KITCHEN_SINK);
@@ -24,6 +26,14 @@ public final class FurniturePeripherals {
 			(be, side) -> new PlatePeripheral((PlateBlockEntity) be), ModBlockEntities.PLATE);
 		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new ToasterPeripheral((ToasterBlockEntity) be), ModBlockEntities.TOASTER);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new StoragePeripheral("kitchen_counter", (SimpleContainerBlockEntity) be), ModBlockEntities.KITCHEN_COUNTER);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new StoragePeripheral("kitchen_cabinet", (SimpleContainerBlockEntity) be), ModBlockEntities.KITCHEN_CABINET);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new BlenderPeripheral((BlenderBlockEntity) be), ModBlockEntities.BLENDER);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new WaffleMakerPeripheral((WaffleMakerBlockEntity) be), ModBlockEntities.WAFFLE_MAKER);
 	}
 
 	private FurniturePeripherals() {}

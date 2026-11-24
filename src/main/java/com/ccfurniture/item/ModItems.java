@@ -14,6 +14,10 @@ public final class ModItems {
 	public static final Item TOAST = Registry.register(Registries.ITEM, CCFurniture.id("toast"),
 		new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.6f).build())));
 
+	public static final Item SMOOTHIE = Registry.register(Registries.ITEM, CCFurniture.id("smoothie"), new SmoothieItem());
+	public static final Item WAFFLE = Registry.register(Registries.ITEM, CCFurniture.id("waffle"),
+		new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(0.7f).build())));
+
 	public static void register() {
 		// Touching this class runs the static initializer above.
 	}
