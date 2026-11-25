@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "cc_furniture",
+  "version": "${version}",
+  "name": "CC: Furniture",
+  "description": "Kitchen furniture that works: Stove, Oven, Dishwasher, Kitchen Sink, Fridge, Blender, Waffle Maker and more. Every block can be controlled from a CC: Tweaked computer.",
+  "authors": ["You"],
+  "license": "MIT",
+  "icon": "assets/cc_furniture/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ccfurniture.CCFurniture"],
+    "client": ["com.ccfurniture.client.CCFurnitureClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "computercraft": "*"
+  }
+}
