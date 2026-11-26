@@ -41,6 +41,12 @@ public class CCFurniture implements ModInitializer {
 				entries.add(ModBlocks.TOASTER);
 				entries.add(ModBlocks.KITCHEN_COUNTER);
 				entries.add(ModBlocks.KITCHEN_CABINET);
+				entries.add(ModBlocks.KITCHEN_FLOOR);
+				entries.add(ModBlocks.BEDSIDE_TABLE);
+				entries.add(ModBlocks.FAN);
+				entries.add(ModBlocks.DESK_LAMP);
+				entries.add(ModBlocks.MAILBOX);
+				entries.add(ModBlocks.COLLECTION_BOX);
 				entries.add(ModBlocks.BLENDER);
 				entries.add(ModBlocks.WAFFLE_MAKER);
 				entries.add(ModItems.COFFEE);
@@ -56,6 +62,8 @@ public class CCFurniture implements ModInitializer {
 		ModItems.register();
 		ModBlocks.register();
 		ModBlockEntities.register();
+		com.ccfurniture.screen.ModScreenHandlers.register();
+		com.ccfurniture.mail.MailboxNetworking.register();
 
 		if (FabricLoader.getInstance().isModLoaded("computercraft")) {
 			com.ccfurniture.compat.FurniturePeripherals.register();

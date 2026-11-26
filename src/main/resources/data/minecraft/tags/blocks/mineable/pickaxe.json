@@ -15,6 +15,11 @@
     "cc_furniture:waffle_maker",
     "cc_furniture:kitchen_counter",
     "cc_furniture:kitchen_cabinet",
-    "cc_furniture:grill"
+    "cc_furniture:grill",
+    "cc_furniture:mailbox",
+    "cc_furniture:collection_box",
+    "cc_furniture:fan",
+    "cc_furniture:desk_lamp",
+    "cc_furniture:kitchen_floor"
   ]
 }

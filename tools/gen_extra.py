@@ -213,3 +213,5 @@ def make():
     make_models()
     make_data()
     make_lang()
+    import gen_extra2
+    gen_extra2.make()

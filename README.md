@@ -11,7 +11,7 @@ CC: Tweaked is optional. Without it the blocks still work, there are just no per
 | Oven | Furnace GUI, bakes food (smoking recipes, 2x speed). | `oven` |
 | Fridge | 27-slot storage. Hoppers work. A computer can lock it. | `fridge` |
 | Dishwasher | 9 slots + water tank (a water bucket fills it, 4 cycles). A cycle takes 5 s and strips dye from leather armor and shulker boxes and patterns from banners. Start: sneak + empty hand, a redstone pulse, or a computer. Right-click opens the GUI. | `dishwasher` |
-| Kitchen Sink | Empty hand toggles the tap. With the tap on: bucket -> water bucket (infinite), bottle -> water bottle, and held dyed gear or banners are washed. | `kitchen_sink` |
+| Kitchen Sink | 3D model: cabinet with doors, counter with a basin, faucet with hot/cold knobs and running water. Empty hand toggles the tap. With the tap on: bucket -> water bucket (infinite), bottle -> water bottle, and held dyed gear or banners are washed. | `kitchen_sink` |
 
 | Microwave | 3D model. 5 slots. Click the **START button** on its front panel (or redstone / computer) to cook every food item inside with smoker recipes in 3 s. Click anywhere else to open it. | `microwave` |
 | Coffee Maker | 3D model. Water bucket = water (4 brews), cocoa beans = coffee beans. Click the **brew button** on its head (or redstone / computer): 5 s, 2 cups. Empty hand takes a cup (or shows status). | `coffee_maker` |
@@ -21,6 +21,12 @@ CC: Tweaked is optional. Without it the blocks still work, there are just no per
 | Kitchen Hood | Decorative 3D hood. A screen on the front shows the in-game time (24h, blinking colon). | - |
 | Toaster | 3D model, 2 slots. Right-click with a Bread Slice to load it (empty hand takes it back), click the **lever** on the front (or redstone / computer) to toast; the Toast pops out after 5 s. | `toaster` |
 | Bread Slice / Toast (items) | Craft 1 bread into 4 bread slices. Toasting them makes Toast, which fills more hunger. | - |
+
+| Blender | 3D model with a glass jar that fills up. Right-click with fruit (apple, sweet berries, glow berries, melon slice; 4 max), empty hand takes one back. Click the **button** on the base (or redstone / computer): 3 s, every 2 fruits make 1 Smoothie. | `blender` |
+| Waffle Maker | 3D model with a hinged lid. Right-click with wheat (2 max) and eggs (2 max), empty hand takes them back. Click the **button** on the front (or redstone / computer): the lid closes, 6 s later each wheat + egg pair pops out as a Waffle. | `waffle_maker` |
+| Kitchen Counter | 3D base unit with a drawer, two doors and a granite top (full height, flush with the stove and dishwasher). 9 slots. Hoppers work. | `kitchen_counter` |
+| Kitchen Cabinet | 3D wall cabinet with double doors, 12 px deep so it sits flush against the wall. 18 slots. Hoppers work. | `kitchen_cabinet` |
+| Smoothie / Waffle (items) | Smoothie is a drink (Regeneration for 5 s). Waffle fills 5 hunger. | - |
 
 The Dishwasher also has a **START button** on its front panel now (the sneak shortcut still works).
 
@@ -60,6 +66,19 @@ plate.isEmpty(); plate.getItem(); plate.clear()
 ```lua
 local t = peripheral.find("toaster")
 t.start(); t.stop(); t.isToasting(); t.getProgress(); t.size(); t.list(); t.getItemDetail(slot)
+```
+
+```lua
+local b = peripheral.find("blender")
+b.start(); b.stop(); b.isRunning(); b.getProgress(); b.size(); b.list(); b.getItemDetail(slot)
+
+local w = peripheral.find("waffle_maker")   -- slots 1-2 wheat, 3-4 eggs
+w.start(); w.stop(); w.isCooking(); w.getProgress(); w.getBatches(); w.size(); w.list(); w.getItemDetail(slot)
+```
+
+```lua
+local c = peripheral.find("kitchen_cabinet")   -- also "kitchen_counter"
+c.size(); c.list(); c.getItemDetail(slot); c.getItemCount(); c.isEmpty()
 ```
 
 ## Building

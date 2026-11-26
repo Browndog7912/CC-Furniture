@@ -31,6 +31,16 @@ public final class FurniturePeripherals {
 		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new StoragePeripheral("kitchen_cabinet", (SimpleContainerBlockEntity) be), ModBlockEntities.KITCHEN_CABINET);
 		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new MailboxPeripheral((MailboxBlockEntity) be), ModBlockEntities.MAILBOX);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new CollectionBoxPeripheral((CollectionBoxBlockEntity) be), ModBlockEntities.COLLECTION_BOX);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new PowerTogglePeripheral("fan", be, com.ccfurniture.block.FanBlock.ON), ModBlockEntities.FAN);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new PowerTogglePeripheral("desk_lamp", be, com.ccfurniture.block.DeskLampBlock.ON), ModBlockEntities.DESK_LAMP);
+		PeripheralLookup.get().registerForBlockEntity(
+			(be, side) -> new StoragePeripheral("bedside_table", (SimpleContainerBlockEntity) be), ModBlockEntities.BEDSIDE_TABLE);
+		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new BlenderPeripheral((BlenderBlockEntity) be), ModBlockEntities.BLENDER);
 		PeripheralLookup.get().registerForBlockEntity(
 			(be, side) -> new WaffleMakerPeripheral((WaffleMakerBlockEntity) be), ModBlockEntities.WAFFLE_MAKER);

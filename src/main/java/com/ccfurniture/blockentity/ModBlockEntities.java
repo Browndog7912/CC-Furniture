@@ -45,6 +45,20 @@ public final class ModBlockEntities {
 	public static final BlockEntityType<GrillBlockEntity> GRILL = register("grill",
 		FabricBlockEntityTypeBuilder.create(GrillBlockEntity::new, ModBlocks.GRILL).build());
 
+	public static final BlockEntityType<MailboxBlockEntity> MAILBOX = register("mailbox",
+		FabricBlockEntityTypeBuilder.create(MailboxBlockEntity::new, ModBlocks.MAILBOX).build());
+
+	public static final BlockEntityType<CollectionBoxBlockEntity> COLLECTION_BOX = register("collection_box",
+		FabricBlockEntityTypeBuilder.create(CollectionBoxBlockEntity::new, ModBlocks.COLLECTION_BOX).build());
+
+	public static final BlockEntityType<FanBlockEntity> FAN = register("fan",
+		FabricBlockEntityTypeBuilder.create(FanBlockEntity::new, ModBlocks.FAN).build());
+	public static final BlockEntityType<DeskLampBlockEntity> DESK_LAMP = register("desk_lamp",
+		FabricBlockEntityTypeBuilder.create(DeskLampBlockEntity::new, ModBlocks.DESK_LAMP).build());
+
+	public static final BlockEntityType<BedsideTableBlockEntity> BEDSIDE_TABLE = register("bedside_table",
+		FabricBlockEntityTypeBuilder.create(BedsideTableBlockEntity::new, ModBlocks.BEDSIDE_TABLE).build());
+
 	private static <T extends BlockEntity> BlockEntityType<T> register(String name, BlockEntityType<T> type) {
 		return Registry.register(Registries.BLOCK_ENTITY_TYPE, CCFurniture.id(name), type);
 	}

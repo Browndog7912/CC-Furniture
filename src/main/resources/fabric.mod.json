@@ -3,13 +3,14 @@
   "id": "cc_furniture",
   "version": "${version}",
   "name": "CC: Furniture",
-  "description": "Kitchen furniture that works: Stove, Oven, Dishwasher, Kitchen Sink and Fridge. Every block can be controlled from a CC: Tweaked computer.",
-  "authors": ["Browndog7912"],
-  "license": "GNU GENERAL PUBLIC LICENSE",
+  "description": "Kitchen furniture that works: Stove, Oven, Dishwasher, Kitchen Sink, Fridge, Blender, Waffle Maker and more. Every block can be controlled from a CC: Tweaked computer.",
+  "authors": ["You"],
+  "license": "MIT",
   "icon": "assets/cc_furniture/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["com.ccfurniture.CCFurniture"]
+    "main": ["com.ccfurniture.CCFurniture"],
+    "client": ["com.ccfurniture.client.CCFurnitureClient"]
   },
   "depends": {
     "fabricloader": ">=0.15.0",

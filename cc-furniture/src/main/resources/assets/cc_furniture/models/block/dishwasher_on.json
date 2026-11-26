@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "cc_furniture:block/dishwasher_front_on",
-    "side": "cc_furniture:block/dishwasher_side",
-    "top": "cc_furniture:block/dishwasher_top"
-  }
-}

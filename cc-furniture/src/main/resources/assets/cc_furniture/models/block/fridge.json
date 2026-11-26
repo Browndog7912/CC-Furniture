@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "cc_furniture:block/fridge_front",
-    "side": "cc_furniture:block/fridge_side",
-    "top": "cc_furniture:block/fridge_top"
-  }
-}
